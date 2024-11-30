@@ -1,0 +1,18 @@
+# ninja log v5
+2	558	7546085640129302	CMakeFiles/lab5_exe.dir/src/MemoryResource.cpp.obj	4e2d48560b97054a
+0	857	7546085643109286	CMakeFiles/lab5_exe.dir/main.cpp.obj	25817bd6bbc76b94
+857	1334	7546085647719286	lab5_exe.exe	9d854980386d13a3
+2	858	7546085803123604	CMakeFiles/test5.dir/src/MemoryResource.cpp.obj	63caabc86a577966
+4	1468	7546085811102342	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	1bed57e7e002f154
+0	1638	7546085812792241	CMakeFiles/test5.dir/test/tests.cpp.obj	24b1681b4bab5266
+3	3181	7546085828189062	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	71820b7677f13a23
+3182	3226	7546085828659068	lib/gtest.lib	b84f56db58e20cdf
+3227	3249	7546085828919070	lib/gtest_main.lib	7c3ef7325e19b7e4
+3249	3713	7546085833379069	test5.exe	9a214b409e0dffb8
+3	660	7546086574507028	CMakeFiles/test5.dir/src/MemoryResource.cpp.obj	63caabc86a577966
+6	1136	7546086580588282	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	1bed57e7e002f154
+1	1331	7546086582518273	CMakeFiles/test5.dir/test/tests.cpp.obj	24b1681b4bab5266
+5	2659	7546086595770654	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	71820b7677f13a23
+2660	2702	7546086596220649	lib/gtest.lib	b84f56db58e20cdf
+2702	2722	7546086596460663	lib/gtest_main.lib	7c3ef7325e19b7e4
+2722	2850	7546086597520646	test5.exe	9a214b409e0dffb8
