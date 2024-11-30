@@ -4,7 +4,7 @@
 #include "../include/ComplexType.h"
 
 TEST(MemoryResource, AllocateAndDeallocate) {
-    FixedBlockMemoryResource memoryResource{sizeof(QueueElement) * 100, 100};
+    MemoryResource memoryResource{sizeof(QueueElement) * 100, 100};
     std::pmr::polymorphic_allocator<QueueElement> alloc(&memoryResource);
 
     QueueElement *element = alloc.allocate(1);
@@ -12,7 +12,7 @@ TEST(MemoryResource, AllocateAndDeallocate) {
 }
 
 TEST(MemoryResource, ExhaustMemory) {
-    FixedBlockMemoryResource memoryResource{sizeof(QueueElement) * 100, 100};
+    MemoryResource memoryResource{sizeof(QueueElement) * 100, 100};
     std::pmr::polymorphic_allocator<QueueElement> alloc(&memoryResource);
     std::vector<QueueElement *> allocatedBlocks;
 
@@ -31,7 +31,7 @@ TEST(MemoryResource, ExhaustMemory) {
 }
 
 TEST(ContainerQueue, AddAndRemove) {
-    FixedBlockMemoryResource memoryResource{sizeof(QueueElement) * 100, 100};
+    MemoryResource memoryResource{sizeof(QueueElement) * 100, 100};
     ContainerQueue<QueueElement> queue{&memoryResource};
 
     QueueElement element = 42;
@@ -47,7 +47,7 @@ TEST(ContainerQueue, AddAndRemove) {
 }
 
 TEST(ContainerQueue, AddComplexType) {
-    FixedBlockMemoryResource memoryResource{sizeof(QueueElement) * 100, 100};
+    MemoryResource memoryResource{sizeof(QueueElement) * 100, 100};
     ContainerQueue<QueueElement> queue{&memoryResource};
 
     ComplexType complex(1, 2.5, "test");
@@ -66,7 +66,7 @@ TEST(ContainerQueue, AddComplexType) {
 }
 
 TEST(ContainerQueue, IteratorTest) {
-    FixedBlockMemoryResource memoryResource{sizeof(QueueElement) * 100, 100};
+    MemoryResource memoryResource{sizeof(QueueElement) * 100, 100};
     ContainerQueue<QueueElement> queue{&memoryResource};
 
     queue.add(10);
@@ -84,7 +84,7 @@ TEST(ContainerQueue, IteratorTest) {
 }
 
 TEST(ContainerQueue, RemoveFromEmptyQueue) {
-    FixedBlockMemoryResource memoryResource{sizeof(QueueElement) * 100, 100};
+    MemoryResource memoryResource{sizeof(QueueElement) * 100, 100};
     ContainerQueue<QueueElement> queue{&memoryResource};
 
     EXPECT_TRUE(queue.isEmpty());

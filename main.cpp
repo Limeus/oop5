@@ -21,7 +21,7 @@ void printQueue(ContainerQueue<QueueElement>& queue) {
 }
 
 int main() {
-    FixedBlockMemoryResource memoryResource(sizeof(QueueElement) * 100, 100);
+    MemoryResource memoryResource(sizeof(QueueElement) * 100, 100);
 
     std::pmr::polymorphic_allocator<QueueElement> alloc(&memoryResource);
     ContainerQueue<QueueElement> mixedQueue(&memoryResource);
