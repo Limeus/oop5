@@ -2,6 +2,7 @@
 #include "include/ContainerQueue.h"
 #include "include/ComplexType.h"
 
+#include <locale>
 #include <iostream>
 #include <string>
 
@@ -21,6 +22,8 @@ void printQueue(ContainerQueue<QueueElement>& queue) {
 }
 
 int main() {
+    std::locale::global(std::locale("ru_RU.UTF-8"));
+    std::wcout.imbue(std::locale("ru_RU.UTF-8"));
     MemoryResource memoryResource(sizeof(QueueElement) * 100, 100);
 
     std::pmr::polymorphic_allocator<QueueElement> alloc(&memoryResource);

@@ -174,14 +174,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "lab5_exe::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-lab5_exe-Debug-a4d768c30ea36bb6f6f1.json",
+					"jsonFile" : "target-lab5_exe-Debug-f1156b8505bbef76faae.json",
 					"name" : "lab5_exe",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "test5::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test5-Debug-2a0bb02b720216aa5dd0.json",
+					"jsonFile" : "target-test5-Debug-48097d426d926cbaf5d4.json",
 					"name" : "test5",
 					"projectIndex" : 0
 				}
